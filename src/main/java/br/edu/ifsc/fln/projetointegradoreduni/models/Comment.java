@@ -1,6 +1,5 @@
 package br.edu.ifsc.fln.projetointegradoreduni.models;
 
-import jdk.jfr.StackTrace;
 import lombok.Getter;
 import lombok.Setter;
 
