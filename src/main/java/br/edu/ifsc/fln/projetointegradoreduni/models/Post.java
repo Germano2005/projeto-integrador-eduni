@@ -17,5 +17,4 @@ public class Post {
     private Community community;
     private List<Comment> comments = new ArrayList<>();
     private List<Like> likes = new ArrayList<>();
-
 }
