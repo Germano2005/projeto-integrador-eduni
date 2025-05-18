@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head(register)}"></head>
+
+<body>
+<div class="login-container">
+  <div th:replace="~{fragments :: imag}"></div>
+  <h5 class="text-center">CADASTRA-SE</h5>
+  <form>
+    <div class="mb-3">
+      <label for="login" class="form-label d-flex align-left">LOGIN</label>
+      <input type="text" class="form-control" id="login" placeholder="Digite seu login" required autofocus>
+    </div>
+    <div class="mb-3">
+      <label for="senha" class="form-label d-flex align-left">SENHA</label>
+      <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+    </div>
+    <div class="mb-3">
+      <label for="confirmeSenha" class="form-label d-flex align-left">CONFIRME A SENHA</label>
+      <input type="password" class="form-control" id="confirmeSenha" placeholder="Confirme sua senha" required>
+    </div>
+    <button type="submit" class="btn btn-custom w-100 mt-3">Confirmar</button>
+  </form>
+</div>
+</body>
+
+</html>

@@ -12,6 +12,6 @@ public class Community {
     private String name;
     private String description;
     private String rules;
-    private User creator;
-    private List<User> members = new ArrayList<>();
+    private UserEntity creator;
+    private List<UserEntity> members = new ArrayList<>();
 }

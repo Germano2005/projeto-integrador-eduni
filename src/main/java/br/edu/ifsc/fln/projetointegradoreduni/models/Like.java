@@ -7,6 +7,6 @@ import java.time.LocalDate;
 @Getter @Setter
 public class Like {
     private Long id;
-    private User user;
+    private UserEntity user;
     private LocalDate date;
 }

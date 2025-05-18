@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments-home :: head(home)}"></head>
+
+<body>
+
+<nav class="navbar navbar-expand top-navbar">
+    <div class="container-fluid mb-1">
+        <div class="d-flex align-items-center">
+            <img th:replace="~{fragments-home :: imag}">
+        </div>
+
+        <div class="d-flex justify-content-center flex-grow-1 me-4">
+            <div class="input-group w-50 me-5">
+                <span class="input-group-text bg-transparent border-end-0 rounded-pill-start">
+                    <i class="bi bi-search"></i>
+                </span>
+                <input class="form-control border-start-0 rounded-pill-end" type="search" placeholder="Pesquisar...">
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center">
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-box-arrow-right fs-4"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Configurações</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="sidebar col-3 mt-5">
+            <ul class="nav flex-column mb-3">
+                <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">POPULAR</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">COMUNIDADES</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CONEXÕES</a></li>
+                <hr>
+                <li class="nav-item"><a class="nav-link" href="#">PERFIL</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content col-6">
+            <div class="user-actions d-flex justify-content-start mb-3">
+                <button class="btn btn-custom me-3">User</button>
+                <button class="btn btn-custom me-3">Comunidades</button>
+                <button class="btn btn-custom">Create post<i class="bi bi-plus-lg ms-2"></i></button>
+            </div>
+
+            <div class="post">
+                <div class="d-flex align-items-center mb-2">
+                    <div class="me-4"><span class="material-symbols-outlined" style="font-size: 40px">account_circle</span></div>
+                    <div>
+                        <strong>User</strong> <br>
+                        <small class="text-muted">Comunidade</small>
+                    </div>
+                </div>
+                <h5>Título do post</h5>
+                <p>CONTEÚDO</p>
+                <div class="post-actions d-flex justify-content-start">
+                    <i class="bi bi-lightbulb me-3"></i>
+                    <i class="bi bi-chat me-3"></i>
+                    <i class="bi bi-share-fill"></i>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="d-flex align-items-center mb-2">
+                    <div class="me-4"><span class="material-symbols-outlined" style="font-size: 40px">account_circle</span></div>
+                    <div>
+                        <strong>User</strong> <br>
+                        <small class="text-muted">Comunidade</small>
+                    </div>
+                </div>
+                <h5>Título do post</h5>
+                <p>CONTEÚDO</p>
+                <div class="post-actions d-flex justify-content-start">
+                    <i class="bi bi-lightbulb me-3"></i>
+                    <i class="bi bi-chat me-3"></i>
+                    <i class="bi bi-share-fill"></i>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="d-flex align-items-center mb-2">
+                    <div class="me-4"><span class="material-symbols-outlined" style="font-size: 40px">account_circle</span></div>
+                    <div>
+                        <strong>User</strong> <br>
+                        <small class="text-muted">Comunidade</small>
+                    </div>
+                </div>
+                <h5>Título do post</h5>
+                <p>CONTEÚDO</p>
+                <div class="post-actions d-flex justify-content-start">
+                    <i class="bi bi-lightbulb me-3"></i>
+                    <i class="bi bi-chat me-3"></i>
+                    <i class="bi bi-share-fill"></i>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="d-flex align-items-center mb-2">
+                    <div class="me-4"><span class="material-symbols-outlined" style="font-size: 40px">account_circle</span></div>
+                    <div>
+                        <strong>User</strong> <br>
+                        <small class="text-muted">Comunidade</small>
+                    </div>
+                </div>
+                <h5>Título do post</h5>
+                <p>CONTEÚDO</p>
+                <div class="post-actions d-flex justify-content-start">
+                    <i class="bi bi-lightbulb me-3"></i>
+                    <i class="bi bi-chat me-3"></i>
+                    <i class="bi bi-share-fill"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right-sidebar col-3 mt-5">
+            <h5 class="mb-3">COMUNIDADES</h5>
+            <ul class="community-list">
+                <li>Comunidade - 1</li>
+                <li>Comunidade - 2</li>
+                <li>Comunidade - 3</li>
+                <li>Comunidade - 4</li>
+                <li>Comunidade - 5</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

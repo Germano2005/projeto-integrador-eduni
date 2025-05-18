@@ -13,7 +13,7 @@ public class Post {
     private String title;
     private String content;
     private LocalDate dateCreation;
-    private User author;
+    private UserEntity author;
     private Community community;
     private List<Comment> comments = new ArrayList<>();
     private List<Like> likes = new ArrayList<>();

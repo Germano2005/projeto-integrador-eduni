@@ -1,19 +1,21 @@
 package br.edu.ifsc.fln.projetointegradoreduni.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Getter @Setter
-public class User {
+@Entity
+public class UserEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String username;
     private String email;
     private String password;
     private String biografia;
-    private List<String> competencias = new ArrayList<>();
-
-    private List<String> cursos = new ArrayList<>();
 }

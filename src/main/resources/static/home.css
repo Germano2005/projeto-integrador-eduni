@@ -1,0 +1,82 @@
+body {
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+    padding-top: 56px; /* Espaço para a navbar fixa */
+}
+.top-navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    height: 56px;
+}
+.sidebar {
+    background-color: white;
+    height: calc(100vh - 56px);
+    position: fixed;
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+    top: 56px;
+    overflow-y: auto;
+}
+.main-content {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+    margin-top: 20px;
+}
+.right-sidebar {
+    position: fixed;
+    right: 0;
+    width: 25%;
+    height: calc(100vh - 56px);
+    padding: 20px;
+    background-color: white;
+    border-left: 1px solid #dee2e6;
+    top: 56px;
+    overflow-y: auto;
+}
+.nav-link {
+    color: #495057;
+    font-weight: 500;
+}
+.nav-link:hover {
+    color: #198754;
+}
+.post {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.community-list {
+    list-style: none;
+    padding: 0;
+}
+.community-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+.post-actions i {
+    font-size: 1.2rem;
+    color: #6c757d;
+    cursor: pointer;
+}
+.post-actions i:hover {
+    color: #198754;
+}
+.user-actions {
+    margin-bottom: 20px;
+}
+.search-bar {
+    width: 400px;
+    max-width: 100%;
+}
+.btn-custom {
+    background-color: limegreen;
+    color: white;
+}
